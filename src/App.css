@@ -1,5 +1,13 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
-  margin: 20px;
+  justify-content: center;
+  background-color: #344e41;
+  margin: auto;
+  padding: 20px;
+}
+.navbar a {
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  color: #dad7cd;
 }
