@@ -1,9 +1,11 @@
+import { Navbar } from 'react-bulma-components';
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>This is the app!</h1>
+      <Header />
     </div>
   );
 }
