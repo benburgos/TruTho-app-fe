@@ -9,11 +9,6 @@ function Header(props) {
           TruTho
         </Navbar.Item>
       </Navbar.Brand>
-      <Navbar.Menu>
-        <Navbar.Container align="end">
-          <Navbar.Item href="#">At the end</Navbar.Item>
-        </Navbar.Container>
-      </Navbar.Menu>
     </Navbar>
   );
 }
