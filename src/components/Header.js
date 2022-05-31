@@ -1,14 +1,12 @@
-import { Link } from 'react-router-dom';
 import { Navbar } from 'react-bulma-components';
+const { Brand, Item } = Navbar;
 
 function Header(props) {
   return (
     <Navbar>
-      <Navbar.Brand>
-        <Navbar.Item href="#">
-          TruTho
-        </Navbar.Item>
-      </Navbar.Brand>
+      <Brand>
+        <Item href="#">TruTho</Item>
+      </Brand>
     </Navbar>
   );
 }

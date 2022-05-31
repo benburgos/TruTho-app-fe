@@ -1,4 +1,3 @@
-import { Navbar } from 'react-bulma-components';
 import './App.css';
 import Header from './components/Header';
 
