@@ -11,3 +11,48 @@
   text-decoration: none;
   color: #dad7cd;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+}
+.media-content {
+  display: flex;
+  flex-direction: column;
+}
+time,
+h1.title.is-4,
+.content {
+  margin: 5px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+time {
+  font-size: smaller;
+  font-style: italic;
+}
+.loader {
+  margin: auto;
+  margin-top: 25%;
+  border: 16px solid #a3b18a;
+  border-top: 16px solid #3a5a40;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
