@@ -13,7 +13,7 @@ function Main(props) {
     setBoard(data);
   }
 
-  async function createBoard() {
+  async function createBoard(board) {
     await fetch(URL, {
       method: 'POST',
       headers: { 'Content-Type': 'Application/json' },
@@ -22,7 +22,7 @@ function Main(props) {
     getBoards();
   }
 
-  async function updateBoard() {
+  async function updateBoard(board, id) {
     await fetch(URL, {
       method: 'PUT',
       headers: { 'Content-Type': 'Application/json' },
@@ -31,11 +31,11 @@ function Main(props) {
     getBoards();
   }
 
-  async function deleteBoard() {
+  async function deleteBoard(id) {
     await fetch(URL + id, {
       method: 'DELETE',
     });
-    getPeople();
+    getBoards();
   }
 
   useEffect(() => {
