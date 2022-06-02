@@ -33,14 +33,16 @@ function Index({ board, createBoard }) {
     return board.map((board) => (
       <Card key={board._id} className="board">
         <Card.Content>
-          <Media>
-            <Media.Item>
-              <Link to={`/boards/${board._id}`}>
-                <Heading size={4}>{board.boardTitle}</Heading>
-              </Link>
-              <time>Created: {formatDate(board.createdAt)}</time>
-            </Media.Item>
-          </Media>
+          <div className="card-heading">
+            <Media>
+              <Media.Item>
+                <Link to={`/boards/${board._id}`}>
+                  <Heading size={4}>{board.boardTitle}</Heading>
+                </Link>
+                <time>Created: {formatDate(board.createdAt)}</time>
+              </Media.Item>
+            </Media>
+          </div>
           <Content>
             {board.list.length} Lists | {} Comments
           </Content>
