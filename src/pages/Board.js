@@ -6,7 +6,7 @@ function Show({ board, updateBoard, deleteBoard }) {
   const { id } = useParams();
   const thisBoard = board.find((board) => board._id === id);
   let navigate = useNavigate();
-
+  
   const removeBoard = () => {
     deleteBoard(thisBoard._id);
     navigate('/');
@@ -29,6 +29,8 @@ function Show({ board, updateBoard, deleteBoard }) {
                 <h4>{comments.cardComment}</h4>
               </div>
             ))}
+            <input type='text' />
+            <button>Add Task</button>
           </div>
         ))}
       </div>
