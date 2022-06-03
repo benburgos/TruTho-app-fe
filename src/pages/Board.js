@@ -6,7 +6,7 @@ function Show({ board, updateBoard, deleteBoard }) {
   const { id } = useParams();
   const thisBoard = board.find((board) => board._id === id);
   let navigate = useNavigate();
-  
+
   const removeBoard = () => {
     deleteBoard(thisBoard._id);
     navigate('/');
@@ -19,6 +19,10 @@ function Show({ board, updateBoard, deleteBoard }) {
         <input type="submit" value="Edit Board" />
         <input type="submit" value="Delete Board" onClick={removeBoard}></input>
       </div>
+      <div className="showBoard-newList">
+        <input type="text" placeholder="New List Name" />
+        <button>Add New List</button>
+      </div>
       <div className="showList">
         {thisBoard.list.map((list, index) => (
           <div key={index} className="showList-item">
@@ -29,7 +33,7 @@ function Show({ board, updateBoard, deleteBoard }) {
                 <h4>{comments.cardComment}</h4>
               </div>
             ))}
-            <input type='text' />
+            <input type="text" placeholder="New Task Name" />
             <button>Add Task</button>
           </div>
         ))}

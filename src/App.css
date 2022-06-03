@@ -40,6 +40,14 @@
 .showList button {
   width: 100%;
 }
+.showBoard-newList {
+  display: flex;
+  justify-content: center;
+  border: 1px dashed black;
+  background-color: #dad7cd;
+  padding: 20px;
+  margin-bottom: 5px;
+}
 .showList-item{
   background-color: #3a5a40;
   color: #dad7cd;
