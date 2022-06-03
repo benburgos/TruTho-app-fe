@@ -23,7 +23,7 @@ function Main(props) {
   }
 
   async function updateBoard(board, id) {
-    await fetch(URL, {
+    await fetch(URL + id, {
       method: 'PUT',
       headers: { 'Content-Type': 'Application/json' },
       body: JSON.stringify(board),
