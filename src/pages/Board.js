@@ -53,6 +53,7 @@ function Show({ board, updateBoard, deleteBoard }) {
         </div>
       </form>
 
+      {/* Added a class below with the specific list_.id in order to test adding tasks to only that list, but ran out of time :( */}
       <div className="showList">
         {thisBoard.list.map((list) => (
           <div key={list._id} className="showList-item">
