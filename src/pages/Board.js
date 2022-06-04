@@ -72,7 +72,7 @@ function Show({ board, updateBoard, deleteBoard }) {
                 name="cardComment"
                 onChange={handleChangeTask}
               />
-              <button>Add Task</button>
+              <button disabled>Add Task</button>
             </form>
           </div>
         ))}
